@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotPasswordFragment">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_background"
+            tools:ignore="UselessParent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/forgot_pass"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/black_ops_one"
+                        android:text="@string/forgot_password"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/forgot_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/login_edit_background"
+                        android:fontFamily="@font/architects_daughter"
+                        android:hint="@string/enter_user_name"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        tools:ignore="MissingConstraints" />
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/login_edit_background"
+                        android:fontFamily="@font/architects_daughter"
+                        android:hint="@string/enter_mobile_number"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        tools:ignore="MissingConstraints" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/forgot_btn_otp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_background"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Get OTP"
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/otp_forgot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/login_edit_background"
+                        android:fontFamily="@font/architects_daughter"
+                        android:hint="Enter OTP"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        tools:ignore="HardcodedText,MissingConstraints" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/forgot_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button_background"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+</FrameLayout>
